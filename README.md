@@ -129,7 +129,17 @@ int main() {
     printf("Enter numerator and denominator for second fraction: ");
     scanf("%f %f", &num2, &den2);
 
-    frac1 = num1 /
+     frac1 = num1 / den1;
+    frac2 = num2 / den2;
+
+   
+    min = (frac1 < frac2) ? frac1 : frac2;
+
+    
+    printf("The minimum of the two fractions is: %.3f\n", min);
+
+    return 0;
+}
 ```
 
 ## OUTPUT:
